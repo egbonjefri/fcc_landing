@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/fcc_landing/static/css/main.6b0c3e7b.css",
+    "main.js": "/fcc_landing/static/js/main.ce42b36b.js",
+    "static/js/787.3361de88.chunk.js": "/fcc_landing/static/js/787.3361de88.chunk.js",
+    "static/media/Capture7.PNG": "/fcc_landing/static/media/Capture7.c59a7fc515ffcb16644e.PNG",
+    "static/media/Capture11.PNG": "/fcc_landing/static/media/Capture11.b44b971f3761587b1762.PNG",
+    "static/media/Capture10.PNG": "/fcc_landing/static/media/Capture10.746f01fc4032c4a4bdcf.PNG",
+    "static/media/Capture9.PNG": "/fcc_landing/static/media/Capture9.90718f82830fb34d0735.PNG",
+    "static/media/Capture1.PNG": "/fcc_landing/static/media/Capture1.404d73eae5bd988cd4f1.PNG",
+    "static/media/Capture3.PNG": "/fcc_landing/static/media/Capture3.c9b9f1c8b7528a0ce60b.PNG",
+    "static/media/Capture2.PNG": "/fcc_landing/static/media/Capture2.48a4b1cc9e30b6fe0b76.PNG",
+    "static/media/Capture5.PNG": "/fcc_landing/static/media/Capture5.2b1042bae2786af49465.PNG",
+    "index.html": "/fcc_landing/index.html",
+    "main.6b0c3e7b.css.map": "/fcc_landing/static/css/main.6b0c3e7b.css.map",
+    "main.ce42b36b.js.map": "/fcc_landing/static/js/main.ce42b36b.js.map",
+    "787.3361de88.chunk.js.map": "/fcc_landing/static/js/787.3361de88.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6b0c3e7b.css",
+    "static/js/main.ce42b36b.js"
+  ]
+}
