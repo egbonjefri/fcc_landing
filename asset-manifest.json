@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/fcc_landing/static/css/main.6b0c3e7b.css",
+    "main.css": "/fcc_landing/static/css/main.ce11b0bb.css",
     "main.js": "/fcc_landing/static/js/main.ce42b36b.js",
     "static/js/787.3361de88.chunk.js": "/fcc_landing/static/js/787.3361de88.chunk.js",
     "static/media/Capture7.PNG": "/fcc_landing/static/media/Capture7.c59a7fc515ffcb16644e.PNG",
@@ -12,12 +12,12 @@
     "static/media/Capture2.PNG": "/fcc_landing/static/media/Capture2.48a4b1cc9e30b6fe0b76.PNG",
     "static/media/Capture5.PNG": "/fcc_landing/static/media/Capture5.2b1042bae2786af49465.PNG",
     "index.html": "/fcc_landing/index.html",
-    "main.6b0c3e7b.css.map": "/fcc_landing/static/css/main.6b0c3e7b.css.map",
+    "main.ce11b0bb.css.map": "/fcc_landing/static/css/main.ce11b0bb.css.map",
     "main.ce42b36b.js.map": "/fcc_landing/static/js/main.ce42b36b.js.map",
     "787.3361de88.chunk.js.map": "/fcc_landing/static/js/787.3361de88.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6b0c3e7b.css",
+    "static/css/main.ce11b0bb.css",
     "static/js/main.ce42b36b.js"
   ]
 }
