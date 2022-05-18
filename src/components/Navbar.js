@@ -44,7 +44,7 @@ import './index.css'
                         <li><Link to='/fcc_landing/contact'><span className='contact'>Contact Us</span></Link></li>
                         <li><Link to="/fcc_landing/products"><span className='product'>Products</span></Link></li>
                         {value > 0 && <div className='banner'><span>{value}</span></div>}
-                        <li><Link to="/cart"><i className="material-icons cart-icon">shopping_cart</i></Link></li>
+                        <li><Link to="/fcc_landing/cart"><i className="material-icons cart-icon">shopping_cart</i></Link></li>
                     
                     </ul>
                 </div>
