@@ -14,10 +14,10 @@ export default function App() {
       <BrowserRouter>
       <Navbar />
       <Routes>
-        <Route path='/cart' element={<Cart />} />
-        <Route path='/products' element={<Products />}  />
-        <Route path='/' element={<Homepage />}  />
-        <Route path='/contact' element={<Contact />}  />
+        <Route path='/fcc_landing/cart' element={<Cart />} />
+        <Route path='/fcc_landing/products' element={<Products />}  />
+        <Route path='/fcc_landing/' element={<Homepage />}  />
+        <Route path='/fcc_landing/contact' element={<Contact />}  />
         </Routes>
         </BrowserRouter>
         <Footer />
