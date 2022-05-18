@@ -27,7 +27,7 @@ import './index.css'
     return(
             <nav className="nav-wrapper">
                 <div className="container">
-                    <Link to="/home" onClick={() => untoggle()} className="brand-logo">TurnTableGurus</Link>
+                    <Link to="/" onClick={() => untoggle()} className="brand-logo">TurnTableGurus</Link>
                     <div className='toggle' onClick={() => toggleBtn()}>
                         <div className='one'></div>
                         <div className='two'></div>
@@ -35,7 +35,7 @@ import './index.css'
                         </div>
                     <div className='menu' onClick={() => untoggle()}>
                         <ul className='menu-list'>
-                            <li><Link to='/home'>HOME</Link></li>
+                            <li><Link to='/'>HOME</Link></li>
                             <li><Link to='/products'>PRODUCTS</Link></li>
                             <li><Link to='/contact'>CONTACT US</Link></li>
                         </ul>

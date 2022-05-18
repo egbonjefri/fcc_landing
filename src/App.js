@@ -13,11 +13,10 @@ export default function App() {
 
       <BrowserRouter>
       <Navbar />
-      
       <Routes>
         <Route path='/cart' element={<Cart />} />
         <Route path='/products' element={<Products />}  />
-        <Route path='/home' element={<Homepage />}  />
+        <Route path='/' element={<Homepage />}  />
         <Route path='/contact' element={<Contact />}  />
         </Routes>
         </BrowserRouter>
