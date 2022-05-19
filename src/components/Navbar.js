@@ -35,7 +35,7 @@ import './index.css'
                         </div>
                     <div className='menu' onClick={() => untoggle()}>
                         <ul className='menu-list'>
-                            <li><Link to='//'>HOME</Link></li>
+                            <li><Link to='/'>HOME</Link></li>
                             <li><Link to='/products'>PRODUCTS</Link></li>
                             <li><Link to='/contact'>CONTACT US</Link></li>
                         </ul>
