@@ -120,6 +120,9 @@
     .cart-icon {
     right: 5%
     }
+    .banner {
+        margin: 0 5.2rem !important
+    }
 }
 @media(max-width: 320px) {
     .cart-icon {
@@ -127,6 +130,9 @@
     }
     .toggle {
         left: 1%;
+    }
+    .banner {
+        margin: 0 6.5rem !important
     }
 }
 
