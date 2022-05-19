@@ -2,7 +2,7 @@
   "name": "fcc_landing",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://egbonjefri.github.io/fcc_landing/",
+  "homepage": "https://fcc_landing.netflify.app/",
   "dependencies": {
     "@googlemaps/react-wrapper": "^1.1.33",
     "@reduxjs/toolkit": "^1.8.1",

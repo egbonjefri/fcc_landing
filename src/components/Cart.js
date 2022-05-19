@@ -1,6 +1,7 @@
 import React from 'react'
 import Total from './Total'
 import { increment, decrement, removeFromCart } from './reducers/cartReducer'
+import { Link } from 'react-router-dom'
 
 import { useSelector, useDispatch } from 'react-redux'
 import './materialize.css'
@@ -41,7 +42,7 @@ export default function Cart() {
           <Total className='total' />
           </div>
          }
-         {addedItems.length === 0 && <p>Nothing to see here...Please add products to your cart.</p>}
+         {addedItems.length === 0 && <p className='center'>Nothing to see here...Please add <Link className='text-dec'to='/products'>products</Link> to your cart.</p>}
          <div className='cover'></div>
          </div> 
   )

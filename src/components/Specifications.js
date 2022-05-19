@@ -18,7 +18,7 @@ const specs = [
 export default function Specifications () {
     let specifics = specs.map(spec => {
         return(
-            <div className='specs-cta'>
+            <div className='specs-cta' key={spec.id}>
                 <div className='spec-image'>
                     <img alt={spec.title} src={spec.img}/>
                 </div>

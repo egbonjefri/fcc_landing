@@ -7,6 +7,7 @@ function GoogleMap (props) {
         width: '50%',
         display: 'block',
         position: 'absolute',
+        margin: '0 10%'
         }
  
     const [infoWindow, setInfoWindow] = useState(false);
