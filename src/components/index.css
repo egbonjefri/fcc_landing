@@ -177,10 +177,26 @@
     justify-content: center;
     grid-template-columns: 30rem 15rem;
 }
+@media (max-width: 750px) {
+    .cart-collection-item {
+        display: flex;
+        flex-direction: column;
+
+    }  
+    .cart-collection img{
+        margin: 0 auto !important;
+    }
+    .cart-collection .item-desc {
+        width: 50%;
+        margin: 0 auto !important;
+        line-height: 2.6
+    }
+}
 .cart-collection img{
     width: 15rem;
     height: 15rem;
-    grid-column-start: 1;    
+    grid-column-start: 1;
+    display: block;    
 }
 .cart-collection .item-desc {
     grid-column-start: 2;

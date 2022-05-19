@@ -48,6 +48,7 @@ export const cartSlice = createSlice({
                 item.quantity += 1;
                 state.total += item.price;
                 state.value += 1;
+                item.stock -= 1;
             // eslint-disable-next-line 
             state.items.map(item2 => {
                 if(item2.id === action.payload) {
