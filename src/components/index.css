@@ -187,9 +187,22 @@
         margin: 0 auto !important;
     }
     .cart-collection .item-desc {
-        width: 50%;
+        width: 100%;
         margin: 0 auto !important;
         line-height: 2.6
+    }
+    .total-item {
+        margin: 1rem 5rem;
+    }
+}
+@media (max-width: 430px) {
+    .total-item {
+        margin: 1rem;
+    }
+}
+@media (max-width: 350px) {
+    .cart-collection img{
+        margin-right: 15% !important;
     }
 }
 .cart-collection img{

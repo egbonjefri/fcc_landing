@@ -11,7 +11,7 @@ export default function Total() {
     
     return (
         <div className='container total'>
-            <div className='collection'>
+            <div className='collection total-item '>
                 <div className='collection-item'>
                     <label>
                         <input onChange={(e) => 
