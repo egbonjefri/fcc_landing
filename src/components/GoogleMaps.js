@@ -3,17 +3,17 @@ import { Map, Marker, GoogleApiWrapper, InfoWindow } from "google-maps-react";
 
 function GoogleMap (props) {
     const style = {
-        height: '50%',
-        width: '50%',
+        height: '25%',
+        width: '100%',
         display: 'block',
-        position: 'absolute',
-        margin: '0 10%'
+        position: 'relative',
+        margin: '0'
         }
  
     const [infoWindow, setInfoWindow] = useState(false);
     const [activeMarker, setActiveMarker] = useState({});
     const [selectedPlace, setSelectedPlace] = useState({});
-    const coordinates = { lat: 10.3019, lng: -85.8411, address: '852 Bannatyne Avenue' };
+    const coordinates = { lat: 49.905570, lng: -97.164703, address: '852 Bannatyne Avenue' };
     let onMarkerClick = ((props, marker, e) => {
         setSelectedPlace(props);
         setActiveMarker(marker);

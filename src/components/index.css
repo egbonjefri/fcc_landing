@@ -4,7 +4,14 @@
 .toggle, .menu, .cover, .covering {
     display: none;
 }
-
+@keyframes slide-menu {
+    0%{
+        transform: translate(-50%, 25%)
+    }
+    100% {
+        transform: translate(0%, 25%)
+    }
+}
 @media(max-width: 992px) {
     .product, .contact {
         display: none;
@@ -38,16 +45,24 @@
     }
     .menu-active {
         display: block;
-        margin: 0 -5.3rem;
+        margin: 0 -8.5%;
+        transition: all 0.35s ease-in;
+        position: relative;
+    }
+  
+    .animate {
+        animation: slide-menu 0.5s linear forwards
     }
     .menu-active ul {
         display: flex;
         width: 100%;
         flex-direction: column;
         flex-wrap: wrap;
-        position: relative;
-        top: 4rem;
+        top: 4.55rem;
         z-index: 10;
+        transition: all 0.35s ease-in;
+        position: absolute;
+
     }
     .menu-active li{
         background-color: black;
@@ -72,7 +87,14 @@
     }
     
 }
-
+@media (max-width: 600px) {
+      .menu-active {
+          margin: 0 -5.5%;
+      }
+      .menu-active ul {
+          top: 4rem
+      }
+}
 .brand-logo {
     font-family: 'Damion';
     font-size: 2.5rem !important;
@@ -115,6 +137,9 @@
     font-size: 2.5rem !important;
     position: absolute;
     color: rgb(0, 0, 0) !important;
+}
+.hider {
+    display: none !important;
 }
 @media(max-width: 572px) {
     .cart-icon {
@@ -195,9 +220,19 @@
         margin: 1rem 5rem;
     }
 }
+
 @media (max-width: 430px) {
     .total-item {
         margin: 1rem;
+    }
+    .cart-collection img{
+        margin: 0 -10% !important;
+    }
+    .cart-collection .item-desc {
+        margin: 0 -10% !important;
+    }
+    .ordered {
+        padding-right: 2rem;
     }
 }
 @media (max-width: 350px) {
@@ -384,30 +419,24 @@ i.failure-icon {
 
 /*About*/
 .about {
-    height: 61rem;
     font-family: 'Roboto', sans-serif;
+    position: relative;
+    height: 2000px;
 }
 
 .maps-cta {
 display: block
 }
-@media (max-width:994px) {
-    .maps-cta {
-        margin: 3rem !important;
-    } 
-    .about {
-        height: 65rem !important;
-    }
+
+
+.btns {
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    transition: 0.35s ease-in-out
 }
-@media (max-width:1034px) {
-    .about {
-        height: 80rem;
-    }
-}
-@media (max-width:823px) {
-    .about {
-        height: 90rem !important;
-    }
+.btns:hover {
+    color:red;
 }
 .form-cta{
     display: flex;
@@ -422,6 +451,11 @@ display: block
 }
 textarea {
     height: 5rem;
+}
+.name-error, .num-error, .email-error {
+    background-color: red;
+    color: white;
+    text-align: center;
 }
 .our-info {
     background-image: linear-gradient(62deg, #000000 0%, #181719 100%);
@@ -442,6 +476,18 @@ textarea {
 }
 .maps h5 {
     text-align: center;
+}
+.icons {
+    font-size: 3rem;
+    display: inline-flex;
+}
+.icons div {
+    padding: 1rem;
+    cursor: pointer;
+    transition:  0.3s ease-in-out   
+}
+.icons div:hover {
+    border-bottom: solid 1px white;
 }
 /*Footer*/
 .page-footer {

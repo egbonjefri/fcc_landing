@@ -4,6 +4,7 @@ import './materialize.css'
 import { useSelector, useDispatch } from 'react-redux'
 import { addToCart } from './reducers/cartReducer'
 import './index.css'
+import { untoggle } from './Navbar'
 
 
  function Products() {
@@ -28,7 +29,7 @@ import './index.css'
        <div className='container product-box'>
            <h3 className='center'>A selection of our products...</h3>
            <div className='box'>{itemList}</div>
-           <div className='cover'></div>
+           <div onClick={() => untoggle()} className='cover'></div>
 
        </div>
    ) 

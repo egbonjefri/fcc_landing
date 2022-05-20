@@ -5,6 +5,15 @@ import { useSelector } from 'react-redux'
 import './materialize.css'
 import './index.css'
 
+export function untoggle () {
+    const toggle = document.getElementsByClassName('toggle')[0];
+    const menu = document.getElementsByClassName('menu')[0];
+    const cover = document.getElementsByClassName('cover')[0];
+    toggle.classList.remove('btn-active');
+    menu.classList.remove('menu-active');
+    menu.classList.remove('animate');
+    cover.classList.remove('covering');
+}
 
  const Navbar = ()=>{
     const value = useSelector((state) => state.counter.value);
@@ -14,16 +23,10 @@ import './index.css'
         const cover = document.getElementsByClassName('cover')[0];
         toggle.classList.toggle('btn-active');
         menu.classList.toggle('menu-active');
-        cover.classList.toggle('covering')
+        menu.classList.add('animate');
+        cover.classList.toggle('covering');
 }
-    function untoggle () {
-    const toggle = document.getElementsByClassName('toggle')[0];
-    const menu = document.getElementsByClassName('menu')[0];
-    const cover = document.getElementsByClassName('cover')[0];
-    toggle.classList.remove('btn-active');
-    menu.classList.remove('menu-active');
-    cover.classList.remove('covering')
-}
+
     return(
             <nav className="nav-wrapper">
                 <div className="container">
@@ -44,7 +47,7 @@ import './index.css'
                         <li><Link to='/contact'><span className='contact'>Contact Us</span></Link></li>
                         <li><Link to="/products"><span className='product'>Products</span></Link></li>
                         {value > 0 && <div className='banner'><span>{value}</span></div>}
-                        <li><Link to="/cart"><i className="material-icons cart-icon">shopping_cart</i></Link></li>
+                        <li onClick={() => untoggle()}><Link to="/cart"><i className="material-icons cart-icon">shopping_cart</i></Link></li>
                     
                     </ul>
                 </div>

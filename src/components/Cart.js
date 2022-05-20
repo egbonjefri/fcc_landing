@@ -6,6 +6,7 @@ import { Link } from 'react-router-dom'
 import { useSelector, useDispatch } from 'react-redux'
 import './materialize.css'
 import './index.css'
+import { untoggle } from './Navbar'
 
 
 export default function Cart() {
@@ -37,13 +38,13 @@ export default function Cart() {
   return(
     <div className='container cart-cont'>
          {addedItems.length > 0 && <div className='cart'>
-           <h5 className='center'>You have ordered:</h5>
+           <h5 className='ordered center'>You have ordered:</h5>
           <ul className='collection cart-collection'>{x}</ul>
           <Total className='total' />
           </div>
          }
          {addedItems.length === 0 && <p className='center'>Nothing to see here...Please add <Link className='text-dec'to='/products'>products</Link> to your cart.</p>}
-         <div className='cover'></div>
+         <div onClick={() => untoggle()} className='cover'></div>
          </div> 
   )
 }

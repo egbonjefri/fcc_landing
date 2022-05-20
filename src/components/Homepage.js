@@ -2,9 +2,9 @@ import React from 'react';
 import './materialize.css'
 import './index.css'
 import Specifications from './Specifications'
-
-
+import { untoggle } from './Navbar'
 export default function Homepage() {
+
     function caller(e) {
         const emailError = document.getElementsByClassName('error')[0];
         const successIcon = document.getElementsByClassName('success-icon')[0];
@@ -66,7 +66,7 @@ export default function Homepage() {
             </div>
             <Specifications />
         </div>
-        <div className='cover'></div>
+        <div onClick={() => untoggle()} className='cover'></div>
 
         </div>
     )
