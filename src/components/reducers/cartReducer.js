@@ -76,7 +76,9 @@ export const cartSlice = createSlice({
           })    
         },
     addToCart: (state, action) => {
-        let existingItem = state.iterateItems.find(item => item.id === action.payload)
+        let existingItem = state.iterateItems.find(item => item.id === action.payload);
+
+
        // eslint-disable-next-line 
         state.items.map(item => {
             if (item.id === action.payload && !existingItem && item.stock > 0) {

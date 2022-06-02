@@ -16,7 +16,11 @@ import { untoggle } from './Navbar'
                 <div className='card-image'>
                     <img src={item.img} alt={item.title} />
                     <span className='card-title'>{item.title}</span>
-                    <span to='/' className='btn-floating halfway-fab waves-effect waves-light black' onClick={() => dispatch(addToCart(item.id))}><i className='material-icons add-button'>add</i></span>
+                    {item.stock > 0 ? <span className='btn-floating halfway-fab waves-effect waves-light black'
+                     onClick={() => dispatch(addToCart(item.id))}>
+                         <i className='material-icons add-button'>add</i></span> : 
+                         <span className='btn-floating halfway-fab waves-effect waves-light black stock-active'>
+                         <i className='material-icons add-button'>add</i></span>}
                 </div>
                 <div className='card-content'>
                     <p>{item.desc}</p>

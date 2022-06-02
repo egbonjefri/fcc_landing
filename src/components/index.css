@@ -220,7 +220,9 @@
         margin: 1rem 5rem;
     }
 }
-
+.stock-active {
+    opacity: 0.5;
+}
 @media (max-width: 430px) {
     .total-item {
         margin: 1rem;
@@ -231,9 +233,7 @@
     .cart-collection .item-desc {
         margin: 0 -10% !important;
     }
-    .ordered {
-        padding-right: 2rem;
-    }
+
 }
 @media (max-width: 350px) {
     .cart-collection img{
@@ -501,7 +501,11 @@ textarea {
     font-weight: 700;
     cursor: pointer;
 }
-
+@media (max-width: 372px) {
+    .page-footer a {
+        padding: 1%
+    }
+}
 ::-webkit-scrollbar {
     width: 10px;
     }
