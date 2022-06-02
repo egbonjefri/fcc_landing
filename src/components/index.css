@@ -436,7 +436,7 @@ display: block
     transition: 0.35s ease-in-out
 }
 .btns:hover {
-    color:rgb(224, 14, 14);
+    color:rgb(224, 10, 14);
 }
 .form-cta{
     display: flex;
